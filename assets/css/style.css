@@ -3,7 +3,12 @@
     padding: 0;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .gradiente {
     height: 100vh;
+    width: 100%;
     background: linear-gradient(#589A8D, #589A8D, #007566);
 }
