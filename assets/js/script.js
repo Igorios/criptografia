@@ -28,7 +28,13 @@ btnDescripto.addEventListener("click", (event) => {
 btnCopiar.addEventListener("click", (event) => {
     event.preventDefault();
 
-    copia();
+    let campoMensagemCopiada = document.querySelector("#mensagem");
+
+    campoMensagemCopiada.select();
+    campoMensagemCopiada.setSelectionRange(0, 99999);
+
+    document.execCommand("copy");
+
 });
 
 
@@ -42,14 +48,6 @@ function decodificar(textoDecodificado) {
     return texto;
 }
 
-function copia() {
-    let campoMensagem = document.querySelector("#mensagem"); 
-
-    campoMensagem.select();
-    campoMensagem.setSelectionRange(0, 99999);
-
-    navigator.clipboard.writeText(campoMensagem);
-}
 
 /* Regras Codificador: 
 "e" é convertido para "enter" 
