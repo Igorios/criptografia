@@ -4,44 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Criptografia</title>
 </head>
-<body style="background-color: #f1f1f1;">
-
-    <main class="container">
-
-        <header>
-            <h1 class="mt-5 text-center">Código secreto!!</h1>
-        </header>
-
-        <div class="row">
-
-            <div class="col-12 col-sm-6 col-md-6">
-                <section class="card mt-5 mx-5 d-flex w-75">
-                    <div class="card-body">
-                        <h5 class="card-title">Apenas letras minúsculas, sem acento</h5>
-                        <input class="w-100" type="text" name="texto" id="texto" placeholder="Insira seu texto aqui">
-                        <input class="btn btn-primary mt-3" id="btnCripto" type="submit" value="criptografar">
-                        <input class="btn btn-primary mt-3" id="btnDescripto" type="submit" value="descriptografar">
+<body>
+    <main class="gradiente">
+        <section class=" justify-content-center d-flex align-items-center h-100">         
+            <div class="row">
+                <h1 class="text-center fw-bold">Código secreto!!</h1>
+                <div class="mt-3 p-4 bg-white" style="border-radius: 15px;">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-6">
+                            <div class="card mx-3 m-4">
+                                <div class="card-body">
+                                    <h5 class="card-title">Apenas letras minúsculas, sem acento</h5>
+                                    <input class="w-100" type="text" name="texto" id="texto" placeholder="Insira seu texto aqui">
+                                    <input class="btn btn-primary mt-3" id="btnCripto" type="submit" value="criptografar">
+                                    <input class="btn btn-primary mt-3" id="btnDescripto" type="submit" value="descriptografar">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6">
+                            <div class="card mx-3 m-4">
+                                <div class="card-body">
+                                    <h4 class="card-title">Mensagem criptografada</h4>
+                                    <input class="w-100" type="text" name="mensagem" id="mensagem">
+                                    <input class="btn btn-primary mt-3" id="btnCopiar" type="submit" value="copiar">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </section>
-            </div>
-            
-            <div class="col-12 col-sm-6 col-md-6">
-                <section class="card mt-5 mx-5 d-flex w-75">
-                    <div class="card-body">
-                        <h4 class="card-title">Mensagem criptografada</h4>
-                        <input class="w-100" type="text" name="mensagem" id="mensagem">
-                        <input class="btn btn-primary mt-3" id="btnCopiar" type="submit" value="copiar">
-                    </div>
-                </section>
+
+                </div>
+                
             </div>
 
-        </div>
-
+        </section>
     </main>
-    <script src="script.js"></script>
+    <script src="assets/js/script.js"></script>
     
 </body>
 </html>

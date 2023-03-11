@@ -1,0 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.gradiente {
+    height: 100vh;
+    background: linear-gradient(#589A8D, #589A8D, #007566);
+}
